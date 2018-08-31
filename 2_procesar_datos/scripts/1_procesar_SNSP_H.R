@@ -155,6 +155,7 @@ names(filtrada)
 base_ordenada = filtrada[,c("inegi", "cve_ent", "year","ent", "modalidad", "rango_edad", "Enero", 
                             "Febrero", "Marzo", "Abril", "Mayo","Junio", "Julio", "Agosto", 
                             "Septiembre", "Octubre", "Noviembre", "Diciembre")]
+
 base_ordenada # bum, inegi hasta el principio - pero hueva 
 ncol(base_ordenada)
 
