@@ -373,10 +373,9 @@ write.csv(base_final, paste(out, "tasa_feminicidos_estatal.csv"), row.names = F,
 ### Ahora quiero una base que tenga tasa total por año y otra tasa promedio por entidad
 
 base_por_year = ungroup(base_final)
-base_por_year = group_by(base_por_year, year)
-base_por_year = summarize(base_por_year, tasa_ponderada = weighted.mean(tasa_total, pob_tot))
 
-### ¿Me ayudan?
+
+base_por_ent = ungroup(base_final)
 
 
 
