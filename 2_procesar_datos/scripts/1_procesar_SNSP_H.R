@@ -47,7 +47,7 @@ table(base$modalidad)
 table(base$ent, base$cve_ent) # pro tip: tablas cruzadas
 
 
-# OJO: NO ES POR ORDEN ALFABÉTICO es por orden YOLO
+# OJO: NO ES POR ORDEN ALFABÉTICO es por orden YOLO (corrección 2018, es porque la Ch era una letra pa los viejitos)
 # En este país identificamos a los estados y municipios con clave inegi 
 # Es una clave de 5 dígitos - 2 dicen qué entidad y 3 dicen qué municipio
 # Ok entonces queremos hacer la clave de dos dígitos (para pegar con otras bases, por ejemplo) ¿que hacemos? 
@@ -141,7 +141,7 @@ su_ejemplo =
 rm(filtrada_tempo, vean, su_ejemplo)
 
 # tirar 2 variables con NULL
-filtrada$tipo_delito <- filtrada$subtipo <- NULL # noten como se puede usar '=' y '<-' indistintamente
+filtrada$tipo_delito = filtrada$subtipo <- NULL # noten como se puede usar '=' y '<-' indistintamente
 str(filtrada)
 
 ####################################
